@@ -20,7 +20,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_ESC,     KC_1,       KC_2,       KC_3,       KC_4,       KC_5,                                   KC_6,       KC_7,       KC_8,       KC_9,       KC_0,       KC_BSPC,
             KC_TAB,     KC_Q,       KC_W,       KC_E,       KC_R,       KC_T,                                   KC_Y,       KC_U,       KC_I,       KC_O,       KC_P,       DE_PLUS,
             KC_LSFT,    KC_A,       KC_S,       KC_D,       KC_F,       KC_G,                                   KC_H,       KC_J,       KC_K,       KC_L,       DE_HASH,    KC_RSFT,
-            KC_LSFT,    KC_Z,       KC_X,       KC_C,       KC_V,       KC_B,       MO(2),          MO(3),      KC_N,       KC_M,       KC_COMM,    KC_DOT,     DE_MINS,    KC_RSFT,
+            KC_LCTL,    KC_Z,       KC_X,       KC_C,       KC_V,       KC_B,       MO(2),          MO(3),      KC_N,       KC_M,       KC_COMM,    KC_DOT,     DE_MINS,    KC_RCTL,
                                                 KC_LCTL,    KC_LGUI,    KC_LALT,    LT(1, KC_SPC),  KC_SPC,     KC_RALT,    KC_RGUI,    KC_RCTL,
 
             KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO),
@@ -29,8 +29,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
             DE_CIRC,    _______,    _______,    _______,    _______,    _______,                            _______,    _______,    _______,    DE_SS,      DE_ACUT,    KC_DEL,
             _______,    _______,    _______,    _______,    _______,    _______,                            _______,    DE_UDIA,    _______,    DE_ODIA,    _______,    _______,
-            _______,    DE_ADIA,    _______,    _______,    _______,    _______,                            KC_LEFT,    KC_DOWN,    KC_UP,      KC_RIGHT,   _______,    KC_ENT,
-            KC_LCTL,    DE_LABK,    _______,    _______,    _______,    _______,    KC_PGUP,    KC_PGDN,    _______,    _______,    _______,    _______,    _______,    KC_RCTL,
+            _______,    DE_ADIA,    _______,    _______,    _______,    _______,                            KC_LEFT,    KC_DOWN,    KC_UP,      KC_RIGHT,   _______,    _______,
+            _______,    DE_LABK,    _______,    _______,    _______,    _______,    KC_PGUP,    KC_PGDN,    _______,    _______,    _______,    _______,    _______,    _______,
                                                 _______,    _______,    _______,    _______,    KC_ENT,     _______,    _______,    _______,
 
             _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______),
@@ -38,10 +38,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [2] = LAYOUT_lily58_hlc(
 
             _______,    _______,    _______,    _______,    _______,    _______,                            _______,    _______,    _______,    _______,    _______,    KC_BRIU,
-            _______,    _______,    _______,    _______,    _______,    _______,                            KC_7,       KC_8,       KC_9,       DE_MINS,    _______,    KC_BRID,
-            _______,    _______,    _______,    _______,    _______,    _______,                            KC_4,       KC_5,       KC_6,       DE_PLUS,    _______,    KC_VOLU,
-            _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    KC_1,       KC_2,       KC_3,       KC_ENTER,   _______,    KC_VOLD,
-                                                _______,    _______,    _______,    _______,    _______,    KC_0,       KC_DOT,     _______,
+            _______,    _______,    _______,    _______,    _______,    _______,                            KC_7,       KC_8,       KC_9,       S(KC_0),    _______,    KC_BRID,
+            _______,    _______,    _______,    _______,    _______,    _______,                            KC_4,       KC_5,       KC_6,       DE_MINS,    _______,    KC_VOLU,
+            _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    KC_1,       KC_2,       KC_3,       DE_PLUS,    _______,    KC_VOLD,
+                                                _______,    _______,    _______,    _______,    KC_0,       KC_DOT,     KC_COMM,    _______,
 
             _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______,    _______),
 
