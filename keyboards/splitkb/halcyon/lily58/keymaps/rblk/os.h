@@ -8,7 +8,8 @@ key_override_t rcrbr_key_override;
 key_override_t rsqbr_key_override;
 key_override_t tilde_key_override;
 
-#define REPLACEMENT_LAYER (1 << 4)
+//#define REPLACEMENT_LAYER (1 << 4)
+#define REPLACEMENT_LAYER ~0
 
 bool process_detected_host_os_kb(os_variant_t detected_os) {
     if (!process_detected_host_os_user(detected_os)) {
